@@ -61,7 +61,7 @@ YouTube : https://youtu.be/8npBGfy47y0?list=PLuHgQVnccGMDU5eAzOz2dZ9KXJF6dkNg3
 
 tag : 버전의 이름을 붙여서 관리 용이
 
-====CLI 원격저장소와 연결(https이용)=====================================================
+====CLI 원격저장소와 연결=====================================================
 원격저장소의 별명은 origin, 브랜치는 master, 원격repository는 git_ex 생성
 
 1. CLI backup
@@ -69,8 +69,9 @@ tag : 버전의 이름을 붙여서 관리 용이
 YouTube : https://youtu.be/fK87Jx3QYJY?list=PLuHgQVnccGMBJr3eVXGvYHDvGNcogEy7v&t=120
   1.1 전제조건
     -지역저장소(.git 폴더 존재, commit 완료) -> 원격repository (github.com)
-  1.2 명령어
-   git remote add origin https://github.com/jknami/git_ex.git
+  1.2 명령어(양자 택일)
+   1.2.1 git remote add origin https://github.com/jknami/git_ex.git(https로 접속할 때)
+   1.2.2 git remote add origin git@github.com:jknami/git_ex.git(ssh로 접속할 때)
   2. 원경저장 상태 확인
    git remote [-v]: -v(저장소 확인 옵션)
   3. 원격저장소에 upload
@@ -82,11 +83,12 @@ YouTube : https://youtu.be/fK87Jx3QYJY?list=PLuHgQVnccGMBJr3eVXGvYHDvGNcogEy7v&t
 원격저장소에 있는 소스를 모두 다른 pc(다른 저장소)로 복제(내려받기)
 YouTube : https://youtu.be/K6ZW--eP3ec?list=PLuHgQVnccGMBJr3eVXGvYHDvGNcogEy7v&t=195
   2.1 원격저장소(github.com) -> 다른 pc의 저장소(아무것도 없는 상태)
-  2.2 명령어
-  git clone https://github.com/jknami/git_ex.git [원하는 디렉토리명-> 생략하면 해당디렉토리에 원격저장소 이름으로 자동생성]
+  2.2 명령어(양자택일)
+    2.2.1 git clone https://github.com/jknami/git_ex.git [원하는 디렉토리명-> 생략하면 해당디렉토리에 원격저장소 이름으로 자동생성](https접속)
+    2.2.2 git clone git@github.com:jknami/git_ex.git(ssh접속)
 
 
-3. ssh 연결을 위한 설정
+3. ssh 연결을 위한 우선 설정
 YouTube : https://youtu.be/78rykXw9_0g
   3.1. cmd나 git bash에서 ssh-keygen 입력
   3.2. key 저장위치와 파일 확인
