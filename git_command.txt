@@ -61,6 +61,8 @@ YouTube : https://youtu.be/8npBGfy47y0?list=PLuHgQVnccGMDU5eAzOz2dZ9KXJF6dkNg3
 
 tag : 버전의 이름을 붙여서 관리 용이
 
+
+
 ====CLI 원격저장소와 연결=====================================================
 원격저장소의 별명은 origin, 브랜치는 master, 원격repository는 git_ex 생성
 
@@ -99,6 +101,9 @@ YouTube : https://youtu.be/78rykXw9_0g
   3.3. id_rsa.pub 내용을 복사
   3.4. 서버 (예 : github)->settings -> SSh and GPG keys -> NEW SSH key -> id_rsa.pub 내용 붙여넣기
 ========================================================================================
+
+
+
 
 CLI 브랜치 & 충돌
 git branch : branch목록보기
